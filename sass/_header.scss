@@ -1,0 +1,131 @@
+.header {
+  height: 95vh;
+  position: relative;
+}
+.header__logobox {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+.header__logo {
+  height: 11rem;
+}
+.heading__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: green;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 8rem;
+  letter-spacing: 1.5rem;
+  font-weight: 400px;
+  animation-name: moveInTop;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+.heading-animation-a {
+  animation-name: moveInRight;
+}
+.heading-animation-b {
+  animation-name: moveInLeft;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400px;
+  letter-spacing: 0.5rem;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+.btn,
+.btn:visited {
+  text-transform: uppercase;
+  padding: 1.4rem 6rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 3rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 7rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.btn--animation {
+  animation: moveInBottom 2s ease-out 0.7s;
+
+  animation-fill-mode: backwards;
+}
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.marquee {
+  position: absolute;
+  bottom: 2rem;
+  left: 46%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  margin: 2rem 6rem 0 6rem;
+  font-size: 2.5rem;
+  color: green;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(41, 152, 255, 0.1),
+    rgba(86, 67, 250, 0.1)
+  );
+}

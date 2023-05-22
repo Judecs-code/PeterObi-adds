@@ -1,0 +1,142 @@
+.card-2 {
+  height: 100%;
+  perspective: 150rem;
+  position: relative;
+}
+
+.card-2:hover .card__back-2 {
+  transform: rotateY(0deg);
+}
+
+.card-2:hover .card__front-2 {
+  transform: rotateY(-180deg);
+}
+.card__side-2 {
+  height: 85%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0.5rem 1.5rem rgb(134, 125, 125);
+  backface-visibility: hidden;
+  transition: all 1.4s;
+}
+.card__front-2 {
+  background-color: white;
+}
+
+.card__picture-right {
+  background-size: cover;
+  background-blend-mode: screen;
+  height: 23rem;
+  width: 100%;
+}
+.card__picture-right-1 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 99, 71, 0.8),
+      rgba(50, 205, 50, 0.8)
+    ),
+    url(../img/obiblack.JPG);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.card__picture-right-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.picture-1 {
+  width: 100%;
+  height: 23rem;
+}
+.picture-2 {
+  width: 100%;
+  height: 23rem;
+}
+.card__heading-2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  top: 21.5rem;
+  right: 1.5rem;
+  z-index: 5;
+  text-align: right;
+  width: 70%;
+}
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: white;
+}
+
+.card__heading-span--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 99, 71, 0.75),
+    rgba(50, 205, 50, 0.75)
+  );
+}
+
+.card__details-2 {
+  padding: 1rem;
+}
+.card__details-ul-2 {
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+}
+.card__details-ul-2 li {
+  padding: 0.37rem;
+  font-size: 1.6rem;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  display: block;
+}
+.card__details-ul-2 li:not(:last-child) {
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid rgb(204, 199, 199);
+}
+.card__picture__back-paragraph {
+  font-size: 1.6rem;
+  display: block;
+  padding: 2rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.8;
+  text-transform: capitalize;
+  padding-top: 5rem;
+  color: black;
+}
+.card__back-2 {
+  transform: rotateY(180deg);
+  display: grid;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 99, 71, 0.4),
+    rgba(50, 205, 50, 0.4)
+  );
+}
+.obidatti:link {
+  text-decoration: none;
+  padding: 0 1rem;
+  margin-right: 1rem;
+  color: #333;
+  background-image: linear-gradient(to right bottom, green, white);
+  box-shadow: 0 0.5rem 1.5rem rgb(134, 125, 125);
+  transition: all 0.2s;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.obidatti:hover {
+  transform: rotate(3deg) scale(1.2);
+  color: white;
+}
